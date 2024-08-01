@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+
+# Set of unlocked boxes, start with box 0
+# Set of available keys, start with keys in box 0
+
 def canUnlockAll(boxes):
     n = len(boxes)
-    unlocked = set([0])  # Set of unlocked boxes, start with box 0
-    keys = set(boxes[0])  # Set of available keys, start with keys in box 0
+    unlocked = set([0])
+    keys = set(boxes[0])
 
     while keys:
         new_key = keys.pop()
